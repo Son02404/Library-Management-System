@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #dbeafe);
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+
+/* Header */
+
+header {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+
+header p {
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+
+
+/* Main Container */
+
+.container {
+
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+
+    background: rgba(255,255,255,0.8);
+
+    backdrop-filter: blur(10px);
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.1);
+
+}
+
+
+
+h2 {
+
+    margin-bottom: 20px;
+
+    color:#1e40af;
+
+}
+
+
+
+
+/* Inputs */
+
+input {
+
+    width: 250px;
+
+    padding: 14px;
+
+    margin: 8px;
+
+    border-radius: 10px;
+
+    border: 1px solid #cbd5e1;
+
+    outline: none;
+
+    font-size: 15px;
+
+}
+
+
+input:focus {
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 8px rgba(37,99,235,0.3);
+
+}
+
+
+
+/* Buttons */
+
+button {
+
+    padding: 13px 22px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:0.3s;
+
+}
+
+
+button:hover {
+
+    transform:translateY(-3px);
+
+    background:#1d4ed8;
+
+}
+
+
+
+/* Books */
+
+
+#bookList {
+
+    margin-top:25px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.book {
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+
+}
+
+
+
+.book:hover {
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.book h3 {
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.book p {
+
+    margin:8px 0;
+
+}
+
+
+
+
+.book button {
+
+    background:#dc2626;
+
+    margin-top:15px;
+
+}
+
+
+.book button:hover {
+
+    background:#991b1b;
+
+}
+
+
+
+
+/* Explanation */
+
+
+.explanation {
+
+    width:90%;
+
+    max-width:1000px;
+
+    margin:30px auto 50px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.1);
+
+}
+
+
+
+.explanation p {
+
+    line-height:1.7;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    input {
+
+        width:100%;
+
+        margin:8px 0;
+
+    }
+
+
+    button {
+
+        width:100%;
+
+    }
+
+
+    header h1 {
+
+        font-size:2rem;
+
+    }
+
+}

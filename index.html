@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Library Management System</h1>
+    <p>Managing books using Arrays in JavaScript</p>
+</header>
+
+
+<section class="container">
+
+    <h2>Add New Book</h2>
+
+    <input id="title" type="text" placeholder="Book Title">
+    <input id="author" type="text" placeholder="Author">
+
+    <button onclick="addBook()">Add Book</button>
+
+
+    <h2>Search Book</h2>
+
+    <input id="search" type="text" placeholder="Search by title">
+
+    <button onclick="searchBook()">Search</button>
+
+
+    <h2>Library Books</h2>
+
+    <div id="bookList"></div>
+
+
+</section>
+
+
+<section class="explanation">
+
+<h2>How Arrays Are Used</h2>
+
+<p>
+Arrays are used to store multiple book records such as book titles,
+authors and availability status. Instead of creating separate variables
+for every book, arrays allow us to organize and manage library data easily.
+</p>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
